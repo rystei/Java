@@ -1,19 +1,26 @@
-package IntroducaoOO;
+package CalculoFibonacci;
 
 public class Executor {
 
-    public static void main(String[] args) {
-        Conta conta1 = new Conta(1, "Julia", 20.0, "Poupança");
-        Conta conta2 = new Conta(2, "Gustavo", 1000.0, "Corrente");
-        //conta.extrato();
-        //conta1.depositar(22.0);
-        //conta.extrato();
-        //conta.exibeBanco();
 
-        conta1.extrato();
-        conta2.extrato();
-        conta1.transferir(conta2, 10.0);
-        conta1.extrato();
-        conta2.extrato();
+    public static void main(String[] args) {
+
+        Recursao recursao = new Recursao();
+        System.out.println("fibonacci:");
+        System.out.println(recursao.fibonacci(5));
+
+        Recursao recursao1 = new Recursao();
+        System.out.println("fatorial:");
+        System.out.println(recursao.fatorial(5));
+
+        Recursao recursao2 = new Recursao();
+        System.out.println("Contar Digitos:");
+        System.out.println(recursao2.ContarDigitos(2025));
+
+        Recursao recursao3 = new Recursao();
+        System.out.println("Somar Digitos:");
+        System.out.println(recursao3.SomarDeDigitos(69));
     }
 }
+
+// Gustavo Cardoso Telles
